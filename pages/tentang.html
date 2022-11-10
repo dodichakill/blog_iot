@@ -18,11 +18,13 @@
   <body>
     <div id="app">
       <header
-        class="bg-white p-5 shadow rounded-xl w-full fixed top-0 left-0 right-0 z-10"
+        class="bg-white p-2 sm:p-5 shadow rounded-xl w-full fixed top-0 left-0 right-0 z-10"
       >
-        <div class="container">
-          <div class="logo font-bold text-2xl text-green-800">Blog_IOT</div>
-          <ol class="flex text-xl gap-6 text-slate-400">
+        <div class="container items-center">
+          <div class="logo font-bold text-lg sm:text-2xl text-green-800">
+            Blog_IOT
+          </div>
+          <ol class="flex text-base sm:text-xl gap-2 sm:gap-6 text-slate-400">
             <li>
               <a href="/index.html">
                 <i class="fa-solid fa-house"></i> Beranda
@@ -45,7 +47,7 @@
         data-aos="fade-down"
       >
         <div
-          class="tentang mt-40 p-5 bg-white w-full rounded-lg max-w-3xl shadow"
+          class="tentang mt-20 sm:mt-40 p-5 bg-white w-full rounded-lg max-w-3xl shadow"
         >
           <h2 class="text-2xl mt-3 text-center mb-2 font-bold text-green-800">
             Tentang Saya
@@ -68,21 +70,29 @@
                 Halo, perkenalkan saya dodi (22090036) mahasiswa D4 Teknik
                 Informatika di Politeknik Harapan Bersama Tegal
               </p>
-              <h3 class="mt-2 font-semibold">Sosial Media</h3>
-              <div class="sosmed flex gap-3 text-2xl">
-                <a href="https://facebook.com/dodi.herlangga.5/"
-                  ><i
-                    class="fa-brands fa-square-facebook shadow text-blue-500"
-                  ></i
-                ></a>
-                <a href="https://www.linkedin.com/in/dodi-a0495b1b9/"
-                  ><i class="fa-brands fa-linkedin text-blue-600 shadow"></i
-                ></a>
-                <a href="https://www.instagram.com/hrl9127/"
-                  ><i
-                    class="fa-brands fa-instagram shadow bg-red-400 text-white"
-                  ></i
-                ></a>
+              <div class="flex justify-between items-center">
+                <div class="w-1/2">
+                  <h3 class="mt-2 font-semibold">Media Sosial</h3>
+                  <div class="sosmed flex gap-3 text-2xl">
+                    <a href="https://facebook.com/dodi.herlangga.5/"
+                      ><i
+                        class="fa-brands fa-square-facebook shadow text-blue-500"
+                      ></i
+                    ></a>
+                    <a href="https://www.linkedin.com/in/dodi-a0495b1b9/"
+                      ><i class="fa-brands fa-linkedin text-blue-600 shadow"></i
+                    ></a>
+                    <a href="https://www.instagram.com/hrl9127/"
+                      ><i
+                        class="fa-brands fa-instagram shadow bg-red-400 text-white"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  id="histats_counter"
+                  class="m-auto inline-block w-20"
+                ></div>
               </div>
 
               <h3 class="font-semibold my-2">Lokasi Kampus</h3>
@@ -96,9 +106,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
 
-              <div class="my-2">
-                <div id="histats_counter" class="m-auto"></div>
-              </div>
+              <div class="my-2"></div>
             </div>
           </div>
         </div>
@@ -113,7 +121,7 @@
     <script>
       // histats.com
       var _Hasync = _Hasync || [];
-      _Hasync.push(["Histats.start", "1,4714360,4,437,112,75,00010000"]);
+      _Hasync.push(["Histats.start", "1,4714360,4,234,112,50,00001010"]);
       _Hasync.push(["Histats.fasi", "1"]);
       _Hasync.push(["Histats.track_hits", ""]);
       (function () {

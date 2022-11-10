@@ -41,7 +41,7 @@ const ActionTools = {
   props: ["url_download", "url_video"],
   template: `
     <hr class="mb-3" />
-    <div class="action mt-5 flex justify-between items-center">
+    <div class="action mt-5 flex justify-between items-center flex-col sm:flex-row gap-5">
         <a
             :href="url_download"
             class="px-4 py-3 bg-green-600 shadow-md shadow-emerald-400 rounded-lg text-white font-semibold"

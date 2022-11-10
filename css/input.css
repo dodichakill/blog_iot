@@ -6,7 +6,7 @@
   @apply max-w-5xl m-auto flex justify-between;
 }
 .container-h-article {
-  @apply max-w-7xl m-auto flex;
+  @apply max-w-5xl m-auto flex;
 }
 html {
   scroll-behavior: smooth;
@@ -48,4 +48,8 @@ body {
 
 .desc h3 {
   @apply font-semibold mb-2 mt-5 text-xl xl:text-2xl text-slate-700;
+}
+
+#disqus_thread {
+  @apply p-5;
 }
