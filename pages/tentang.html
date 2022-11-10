@@ -95,6 +95,10 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
+
+              <div class="my-2">
+                <div id="histats_counter" class="m-auto"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -106,5 +110,22 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="/js/main.js"></script>
+    <script>
+      // histats.com
+      var _Hasync = _Hasync || [];
+      _Hasync.push(["Histats.start", "1,4714360,4,437,112,75,00010000"]);
+      _Hasync.push(["Histats.fasi", "1"]);
+      _Hasync.push(["Histats.track_hits", ""]);
+      (function () {
+        var hs = document.createElement("script");
+        hs.type = "text/javascript";
+        hs.async = true;
+        hs.src = "//s10.histats.com/js15_as.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(hs);
+      })();
+    </script>
   </body>
 </html>
