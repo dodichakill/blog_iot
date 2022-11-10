@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Blog_IOT</title>
+  </head>
+  <body class="relative">
+    <div id="app">
+      <header
+        class="bg-white p-5 shadow rounded-xl w-full fixed top-0 left-0 right-0 z-10"
+      >
+        <div class="container">
+          <div class="logo font-bold text-2xl text-green-800">Blog_IOT</div>
+          <ol class="flex text-xl gap-6 text-slate-400">
+            <li class="text-slate-600 font-semibold">
+              <a href="#"> <i class="fa-solid fa-house"></i> Beranda </a>
+            </li>
+            <li>
+              <a href="/pages/artikel.html">
+                <i class="fa-solid fa-rectangle-list"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a href="/pages/tentang.html">
+                <i class="fa-solid fa-user"></i> Tentang</a
+              >
+            </li>
+          </ol>
+        </div>
+      </header>
+
+      <!-- hero start -->
+      <div
+        class="hero h-screen mt-10 w-full relative flex p-5 m-auto justify-center flex-col-reverse md:flex-row"
+      >
+        <div
+          class="flex flex-col max-w-xl justify-center"
+          data-aos="fade-right"
+        >
+          <h1 class="font-bold text-3xl text-green-800">
+            Internet Of Things (IoT)
+          </h1>
+          <p class="my-2 text-slate-500">
+            Mari mulai belajar lebih dalam tentang Internet Of Things secara
+            gratis bersama kami di website Blog_IOT
+          </p>
+          <a
+            href="/pages/artikel.html"
+            class="py-3 px-4 w-44 bg-green-800 shadow-emerald-500 rounded-md text-white shadow-md"
+          >
+            <i class="fa-solid fa-book-open-reader mr-2"></i> Baca Sekarang
+          </a>
+        </div>
+        <div
+          class="image-container p-2 flex justify-center items-center"
+          data-aos="fade-left"
+        >
+          <img src="img/hero.svg" alt="hero image" />
+        </div>
+      </div>
+      <!-- hero end -->
+      <my-footer />
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

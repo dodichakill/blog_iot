@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-5xl m-auto flex justify-between;
+}
+.container-h-article {
+  @apply max-w-7xl m-auto flex;
+}
+html {
+  scroll-behavior: smooth;
+}
+.card {
+  @apply w-full mb-2 bg-slate-100 rounded-lg;
+}
+
+html::-webkit-scrollbar {
+  @apply bg-gray-300;
+}
+html::-webkit-scrollbar-thumb {
+  @apply bg-green-800 rounded-full;
+}
+
+footer {
+  @apply text-slate-500;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.card-body {
+  @apply flex items-center font-semibold box-border p-4 rounded flex-col md:flex-row;
+}
+
+.card-body img {
+  @apply mb-2;
+}
+
+.desc p {
+  @apply mb-3 text-slate-600 text-base xl:text-lg;
+}
+
+.desc h2 {
+  @apply font-semibold mb-2 mt-5 text-2xl xl:text-3xl text-slate-800;
+}
+
+.desc h3 {
+  @apply font-semibold mb-2 mt-5 text-xl xl:text-2xl text-slate-700;
+}
