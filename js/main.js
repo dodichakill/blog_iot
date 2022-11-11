@@ -15,26 +15,27 @@ const myFooter = {
     `,
 };
 
-const Navbar = {
-  props: ["title"],
+const modalBox = {
+  props: ["url_video"],
   template: `
-    <header
-      class="bg-white p-5 shadow rounded-xl w-full fixed top-0 left-0 right-0 z-10"
+  <div
+    class="w-full bg-slate-300 flex justify-center items-center h-screen fixed flex-col z-50"
+  >
+    <iframe
+      :src="url_video"
+      title="YouTube video player"
+      frameborder="0"
+      class="sm:p-5 p-2 w-full max-w-[820px] h-[300px] sm:h-[420px] rounded-lg bg-green-800"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <button
+      class="px-4 py-3 bg-white border-2 border-red-500 shadow-lg text-red-500 font-bold mt-5 rounded-lg"
     >
-      <div class="container-h-article">
-        <div class="logo font-bold text-2xl text-green-800 box-border">
-          <a href="/pages/artikel.html" class="mr-5 p-3">
-            <i class="fa-solid fa-arrow-left"></i>
-          </a>
-        </div>
-        <div class="text-center w-full">
-          <h1 class="text-xl font-bold">
-            {{title}}
-          </h1>
-        </div>
-      </div>
-    </header>
-    `,
+      <i class="fa-sharp fa-solid fa-circle-xmark sm:text-xl mr-2"></i>
+      Tutup Video
+    </button>
+  </div>`,
 };
 
 const ActionTools = {
@@ -63,6 +64,6 @@ createApp({
   components: {
     "my-footer": myFooter,
     "action-tools": ActionTools,
-    "my-navbar": Navbar,
+    "modal-box": modalBox,
   },
 }).mount("#app");
